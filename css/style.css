@@ -2,9 +2,10 @@ body {
     margin: 0;
     font-family: 'Open Sans', sans-setif;
 }
+
 .header {
     height: 70vh;
-/*    .. tymi kropkami cofam sie do katalogu w ktorym jest zdjecie, oraz ma byc url*/
+    /*    .. tymi kropkami cofam sie do katalogu w ktorym jest zdjecie, oraz ma byc url*/
     background-image: url('../img/header.jpg');
     background-size: cover;
     background-position: center;
@@ -13,6 +14,7 @@ body {
     align-items: center;
     text-align: center;
 }
+
 hr {
     width: 70px;
     height: 2px;
@@ -24,7 +26,7 @@ hr {
     text-transform: uppercase;
     color: #007bff;
     font-size: 60px;
-/*    margines z h1 sciagamy*/
+    /*    margines z h1 sciagamy*/
     margin: 0;
 }
 
@@ -41,16 +43,57 @@ hr {
 .header a {
     text-decoration: none;
     display: inline-block;
-/*    border: wazne ze po display i ponizsza wartosc*/
+    /*    border: wazne ze po display i ponizsza wartosc*/
     border: 1px solid #007bff;
     color: #333;
     text-transform: uppercase;
     padding: 10px;
-    transition: all 0.4s;  
+    transition: all 0.4s;
 }
 
 /*hover odpowiada za to ze teks sie podswietla gdy na niego najade*/
 .header a:hover {
     background-color: #007bff;
     color: #fff;
+}
+
+/*.main-nav oznacza ze lapie nawigacje o tej konktertnej klasie*/
+.main-nav {
+    background-color: #007bff;
+    /*    padding: zeby podswietlanie nie pokrylo calej lini tylko fragment, aby zostal odstep od gory i dolu*/
+    padding: 10px 0;
+    position: sticky;
+    top: 0; 
+}
+
+/*zlap element ul ktory jest elementem potomnym elementu o klasie main-nav*/
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+    /*    list-style-type: none; wyczyscil mi kropki*/
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav li {
+    text-transform: uppercase;
+    /*    padding: oddzielil mi o mnie portfolio kontakt od siebie*/
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+.main-nav li:hover {
+    background-color: #fff;
+    color: #007bff;
+}
+
+.section {
+    
+}
+
+.section h2 {
+    text-transform: uppercase;
 }
