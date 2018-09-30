@@ -16,6 +16,21 @@
     .main-nav #menu:checked + ul {
         display: block;
     }
+    .portfolio-inner a {
+        flex-basis: 100%;
+    }
+    #kontakt form {
+        width: 90%;
+    }
+    
+    #kontakt form input {
+        flex-basis: 100%;
+    }
+    
+    #about figure {
+        max-width: 300px;
+        max-height: 300px;
+    }
     
 }
 @media all and (max-width: 480px) {
