@@ -90,10 +90,65 @@ hr {
     color: #007bff;
 }
 
-.section {
-    
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 60px 0;
 }
 
-.section h2 {
+#about hr {
+    margin-bottom: 50px;
+}
+
+h2 {
     text-transform: uppercase;
+    color: #333;
+    font-weight: 100;
+}
+
+/*img o tej wartosci powoduje ze obraz zmianil obwod w kolko*/
+img {
+    border-radius: 50%;
+}
+#about p {
+    max-width: 700px;
+}
+
+section a {
+    text-decoration: none;
+    display: inline-block;
+    /*    border: wazne ze po display i ponizsza wartosc*/
+    border: 1px solid #007bff;
+    color: #333;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: all 0.4s;
+}
+
+/*hover odpowiada za to ze tekst sie podswietla gdy na niego najade*/
+section a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#portfolio {
+    background-color: #f2f1ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 60px 0;
+    flex-wrap: wrap;
+    align-content:flex-end;
+}
+#portfolio hr {
+    margin-bottom: 50px;
+}
+
+#portfolio a {
+    flex-shrink: 0;
 }
