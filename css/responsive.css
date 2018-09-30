@@ -1,0 +1,23 @@
+@media all and (max-width: 1200px) {
+    
+}
+@media all and (max-width: 992px) {
+    
+}
+@media all and (max-width: 768px) {
+    .main-nav ul {
+        display: none;
+    }
+    .main-nav label {
+        display: block;
+        text-align: right;
+    }
+    
+    .main-nav #menu:checked + ul {
+        display: block;
+    }
+    
+}
+@media all and (max-width: 480px) {
+    
+}
