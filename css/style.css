@@ -6,7 +6,6 @@ body {
 
 .header {
     height: 70vh;
-    /*    .. tymi kropkami cofam sie do katalogu w ktorym jest zdjecie, oraz ma byc url*/
     background-image: url('../img/header.jpg');
     background-size: cover;
     background-position: center;
@@ -28,7 +27,6 @@ hr {
     text-transform: uppercase;
     color: #007bff;
     font-size: 60px;
-    /*    margines z h1 sciagamy*/
     margin: 0;
 }
 
@@ -45,7 +43,6 @@ hr {
 .header a {
     text-decoration: none;
     display: inline-block;
-    /*    border: wazne ze po display i ponizsza wartosc*/
     border: 1px solid #007bff;
     color: #333;
     text-transform: uppercase;
@@ -53,32 +50,27 @@ hr {
     transition: all 0.4s;
 }
 
-/*hover odpowiada za to ze teks sie podswietla gdy na niego najade*/
 .header a:hover {
     background-color: #007bff;
     color: #fff;
 }
 
-/*.main-nav oznacza ze lapie nawigacje o tej konktertnej klasie*/
 .main-nav {
     background-color: #007bff;
-    /*    padding: zeby podswietlanie nie pokrylo calej lini tylko fragment, aby zostal odstep od gory i dolu*/
     padding: 10px 0;
     position: sticky;
-    top: 0; 
+    top: 0;
     z-index: 10;
 }
 
 .main-nav label,
 #menu {
-    display: none;  
+    display: none;
 }
 
-/*zlap element ul ktory jest elementem potomnym elementu o klasie main-nav*/
 .main-nav ul {
     margin: 0;
     padding: 0;
-    /*    list-style-type: none; wyczyscil mi kropki*/
     list-style: none;
     display: flex;
     justify-content: center;
@@ -86,7 +78,6 @@ hr {
 
 .main-nav li {
     text-transform: uppercase;
-    /*    padding: oddzielil mi o mnie portfolio kontakt od siebie*/
     padding: 20px;
     color: #fff;
     text-decoration: none;
@@ -117,10 +108,6 @@ h2 {
     font-weight: 100;
 }
 
-/*img o tej wartosci powoduje ze obraz zmianil obwod w kolko*/
-#about img {
-    border-radius: 50%;
-}
 #about p {
     max-width: 700px;
 }
@@ -128,7 +115,6 @@ h2 {
 .button {
     text-decoration: none;
     display: inline-block;
-    /*    border: wazne ze po display i ponizsza wartosc*/
     border: 1px solid #007bff;
     color: #333;
     text-transform: uppercase;
@@ -136,7 +122,6 @@ h2 {
     transition: all 0.4s;
 }
 
-/*hover odpowiada za to ze tekst sie podswietla gdy na niego najade*/
 .button:hover {
     background-color: #007bff;
     color: #fff;
@@ -144,9 +129,8 @@ h2 {
 
 .portfolio-inner {
     display: flex;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
 }
-/*zawsze jak jest display flex to ustawiaj flex-wrap:wrap*/
 
 .portfolio-inner a {
     flex-basis: 25%;
@@ -154,40 +138,18 @@ h2 {
     height: 200px;
 }
 
-/*
-#portfolio .portfolio-inner a::before {
-    content: 'project';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba (0, 123. 255, 0.7);
-    color: #fff;
-    line-height: 200px;
-    opacity: 0;
-    transition: all 0.4s;
-} 
-*/
 
 .portfolio-inner img {
-    width: 100%; 
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
-/*object - fit: cover działa jak mam ustawione i wysokosc i szerokosc*/
 
 #portfolio {
     background-color: #f2f1ed;
     text-align: center;
     padding: 60px 0;
 }
-
-/*
-#portfolio hr {
-    margin-bottom: 50px;
-}
-*/
 
 .portfolio-inner a p {
     position: absolute;
@@ -201,18 +163,13 @@ h2 {
     opacity: 0;
     transition: all 0.4s;
 }
-/*
-.portfolio-inner a:hover {
-    background-color: #007bff;
-    color: #fff;
-}
-*/
+
 .portfolio-inner p:hover {
     color: #fff;
     opacity: 1;
 }
 
-#kontakt {
+#contact {
     text-align: center;
 }
 
@@ -223,18 +180,19 @@ form {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 input {
     flex-basis: 45%;
     margin-bottom: 20px;
     padding: 10px;
 }
+
 textarea {
     height: 60px;
     flex-basis: 100%;
     margin-bottom: 20px;
     padding: 10px;
 }
-/*wszystkie imputy z wyjatkiem submit p:not(type="submit" w trix 3w to jest*/
 
 input[type="submit"] {
     margin: auto;
@@ -265,4 +223,3 @@ footer {
 footer p {
     margin: 0:
 }
-
